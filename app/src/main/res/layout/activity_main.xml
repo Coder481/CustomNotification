@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/simpleNotificationTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simple"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/simpleNotification"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Simple"
+        app:layout_constraintEnd_toStartOf="@+id/largeIconNotification"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/simpleNotificationTV" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/largeIconNotification"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="With Image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/simpleNotification"
+        app:layout_constraintTop_toTopOf="@id/simpleNotification"/>
+
+
+    <TextView
+        android:id="@+id/styledTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Styled Notification"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/simpleNotification"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bigTextNotification"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Big Text"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/expImgNotification"
+        app:layout_constraintTop_toBottomOf="@id/styledTV" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/expImgNotification"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Big Expandable Image"
+        app:layout_constraintStart_toEndOf="@id/bigTextNotification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bigTextNotification" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/inboxStyleNotification"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inbox Styled"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@id/bigTextNotification"
+        app:layout_constraintEnd_toStartOf="@id/messagingNotification"
+        app:layout_constraintTop_toBottomOf="@id/bigTextNotification" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/messagingNotification"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Messaging"
+        app:layout_constraintStart_toEndOf="@id/inboxStyleNotification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/inboxStyleNotification" />
+
+
+
+    <TextView
+        android:id="@+id/customTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Layout Notification"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inboxStyleNotification" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/customLayNotification"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@id/customTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/customTV" />
+
+    <TextView
+        android:id="@+id/soundTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sounded Notification"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/customLayNotification" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/soundedNotification"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Sound"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@id/soundTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/soundTV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
